@@ -1,11 +1,15 @@
-<div align="center">
+# Little Melody Piano — Android App Project
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+This project wraps your latest **Little Melody Piano** web app (`app/src/main/assets/index.html`) inside a native Android WebView app ready to compile into an `.apk`.
 
-  <h1>Built with AI Studio</h2>
+## Option 1: Build APK in Android Studio (Easiest on PC/Mac)
+1. Unzip `LittleMelodyPiano_Android.zip`.
+2. Open **Android Studio** and click **Open**, then select the unzipped `LittleMelodyPiano_Android` folder.
+3. Wait for Gradle Sync to finish.
+4. Go to **Build → Build Bundle(s) / APK(s) → Build APK(s)**.
+5. Copy `app/build/outputs/apk/debug/app-debug.apk` to your Android phone and tap it to install.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Option 2: Build APK Free in the Cloud (No Android Studio Needed)
+1. Create a free repository on GitHub and upload all files from this folder (including `.github/workflows/build-apk.yml`).
+2. Open the **Actions** tab on GitHub — the **Build Android APK** workflow will run automatically.
+3. Download the **LittleMelodyPiano-debug-apk** artifact and install `app-debug.apk` on your Android phone.
